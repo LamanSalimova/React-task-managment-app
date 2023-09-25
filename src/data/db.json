@@ -1,0 +1,67 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Mobile Wireframes",
+      "description": "Description for Task 1",
+      "date": "2023-09-25",
+      "assignee": "Viverra Diam",
+      "board": "to do",
+      "img": "https://images.pexels.com/photos/4971135/pexels-photo-4971135.jpeg?auto=compress&cs=tinysrgb&w=100"
+    },
+    {
+      "id": 2,
+      "name": "Login Flow",
+      "description": "",
+      "date": "2023-09-26",
+      "assignee": "Nullam Velit",
+      "board": "in progress",
+      "img": "https://images.pexels.com/photos/4420634/pexels-photo-4420634.jpeg?auto=compress&cs=tinysrgb&w=100"
+    },
+    {
+      "id": 3,
+      "name": "Forgot Password Screen",
+      "description": "Description for Task 3",
+      "date": "2023-09-27",
+      "assignee": "User 3",
+      "board": "in review",
+      "img": "https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg?auto=compress&cs=tinysrgb&w=100"
+    },
+    {
+      "id": 4,
+      "name": "Mobile Wireframes",
+      "description": "Description for Task 4",
+      "date": "2023-09-28",
+      "assignee": "Viverra Diam",
+      "board": "done",
+      "img": "https://images.pexels.com/photos/5384445/pexels-photo-5384445.jpeg?auto=compress&cs=tinysrgb&w=100"
+    },
+    {
+      "id": 5,
+      "name": "Task 5",
+      "description": "Description for Task 5",
+      "date": "2023-09-29",
+      "assignee": "User 2",
+      "board": "in review",
+      "img": "https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg?auto=compress&cs=tinysrgb&w=100"
+    },
+    {
+      "id": 6,
+      "name": "User Research",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque …",
+      "date": "2023-09-29",
+      "assignee": "Maecenas Lacus",
+      "board": "to do",
+      "img": "https://images.pexels.com/photos/4420634/pexels-photo-4420634.jpeg?auto=compress&cs=tinysrgb&w=100"
+    },
+    {
+      "id": 7,
+      "name": "Client Call",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque …",
+      "date": "2023-09-29",
+      "assignee": "Eget Integer",
+      "board": "to do",
+      "img": "https://images.pexels.com/photos/5384445/pexels-photo-5384445.jpeg?auto=compress&cs=tinysrgb&w=100"
+    }
+  ]
+}
