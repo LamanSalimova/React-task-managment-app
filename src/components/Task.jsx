@@ -1,26 +1,8 @@
 import { Box, Flex, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { BiSolidTimeFive } from "react-icons/bi";
-// import { useDrag } from "react-dnd";
 
 export default function Task({ task, props }) {
-  // const [{ isDragging }, drag] = useDrag(() => ({
-  //   type: "task",
-  //   item: {
-  //     id: task.id,
-  //     board: task.board,
-  //     description: task.description,
-  //     name: task.name,
-  //     assignee: task.assignee,
-  //     date: task.date,
-  //   },
-  //   collect: (monitor) => ({
-  //     isDragging: !!monitor.isDragging(),
-  //   }),
-  // }));
-
-  // console.log(isDragging);
-
   const dragStarted = (e, id) => {
     console.log("Drag has started");
     console.log(task.id);
