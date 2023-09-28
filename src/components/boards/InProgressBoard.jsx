@@ -2,10 +2,8 @@ import { Flex, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import data from "../../data/db.json";
 import Task from "../Task";
-import { useSelector } from "react-redux";
-import { useDrop } from "react-dnd";
-// import { useDispatch } from "react-redux";
-// import { addTask } from "../../redux/taskSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { addTask } from "../../redux/taskSlice";
 
 export default function InProgressBoard() {
   const inProgressTasks = data.tasks.filter(
@@ -18,22 +16,36 @@ export default function InProgressBoard() {
     task.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  const [{ isOver }, drop] = useDrop(() => ({
-    accept: "task",
-    drop: (item) => handleDrop(item),
-    collect: (monitor) => ({
-      isOver: !!monitor.isOver(),
-    }),
-  }));
+  const dispatch = useDispatch();
 
-  // const dispatch = useDispatch();
+  const draggingOver = (e) => {
+    e.preventDefault();
+    console.log("Droppinggggggggg");
+  };
 
-  const handleDrop = (item) => {
-    console.log("Drop item", item);
+  const dragDropped = (e) => {
+    console.log("You dropped");
+    let transferedTaskId = e.dataTransfer.getData("todoId");
+    // console.log("transferedTaskId", transferedTaskId);
+    // dispatch(addTaskToBoard({ id: transferedTaskId, state: "progress" }));
+    const newTask = {
+      name,
+      description,
+      date,
+      assignee,
+      board: "to do",
+    };
+    console.log(newTask, "newTask");
+
+    dispatch(addTask(newTask));
   };
 
   return (
-    <div ref={drop}>
+    <div
+      droppable
+      onDragOver={(e) => draggingOver(e)}
+      onDrop={(e) => dragDropped(e)}
+    >
       <Stack px="16px" bg="var(--clr-secondary)" borderRadius="5px" pb="40px">
         <Flex justify="center" align="center" gap="10px" my="13px">
           <Text fontSize="15px" fontWeight="700">

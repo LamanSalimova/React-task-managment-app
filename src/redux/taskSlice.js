@@ -9,13 +9,13 @@ const taskSlice = createSlice({
       console.log("slice task", action.payload);
     },
     addTaskToBoard: (state, action) => {
-      const newTask = action.payload; // Eklenecek yeni görev
-      newTask.board = "in progress"; // Yeni görevin tahtası "in progress" olarak ayarlanıyor
-      state.push(newTask); // Yeni görevi görev listesine ekleyin
+      const newTask = action.payload; 
+      newTask.board = "progress"; 
+      state.push(newTask);
     },
   },
 });
 
-export const { addTask, moveTask } = taskSlice.actions;
+export const { addTask, addTaskToBoard } = taskSlice.actions;
 
 export default taskSlice.reducer;
